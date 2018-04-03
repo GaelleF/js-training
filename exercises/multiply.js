@@ -9,6 +9,23 @@
  */
 
 // Your code :
+const multiply = (arg1,arg2)=> {
+	let multi = 0;
+	if (arg2 == 0) {
+		multi = 0;
+	}
+	else if (arg2 > 0) {
+		for(let i =0;i<arg2;i++){
+			multi = multi + arg1;
+		}
+	}
+	else {
+		for(let i =0 ;i>arg2;i--){
+			multi = multi - arg1;
+		}
+	}
+	return multi;
+}
 
 //* Begin of tests
 const assert = require('assert')

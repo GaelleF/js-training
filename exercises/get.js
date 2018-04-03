@@ -1,7 +1,7 @@
 'use strict'
 
 /*
- * Create a `get` function that takes a key and return the corresponding value
+ * Create a get function that takes a key and return the corresponding value
  * in the sourceObject
  *
  * @notions Functions, Data-Structures, Get
@@ -17,6 +17,32 @@ const sourceObject = {
 
 // Your code :
 
+/*const get = (key) => {
+	switch (key){
+		case 'num':
+			return sourceObject.num
+		break;
+		case 'bool':
+			return sourceObject.bool
+		break;
+		case 'str':
+			return sourceObject.str
+		break;
+		case 'log':
+			return sourceObject.log
+		break;
+		default:
+			return undefined
+
+	}
+	
+}*/
+
+const get = (key) => {
+	return sourceObject[key];
+}
+
+/*console.log(get('num'));*/
 //* Begin of tests
 const assert = require('assert')
 
